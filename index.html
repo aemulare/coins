@@ -24,16 +24,25 @@
     <a href="#">Collection</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
-    <a href="#">
-        <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;
-        <i class="fa fa-usd" aria-hidden="true"><span id="total">0.00</span></i></a>
+    <div class="dropdown">
+        <a href="#" id="cart" class="dropbtn">
+            <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;
+            <i class="fa fa-usd" aria-hidden="true"><span id="total">0.00</span></i>
+        </a>
+        <ul class="dropdown-content">
+
+        </ul>
+    </div>
 </nav>
 <div class="container">
     <div>
         <!-- Card 1 -->
         <div class="card" id="coin1">
             <div class="card-header">
-                <h5>American Eagle 2017<br />United States 1 oz Silver Proof Coin</h5>
+                <h5>
+                    <span class="coin-name">American Eagle 2017</span><br/>
+                    <span class="coin-description">United States 1 oz Silver Proof Coin</span>
+                </h5>
             </div>
 
             <div class="card-grid">
@@ -46,11 +55,9 @@
             </div>
 
             <div class="card-footer">
-                <div>
-                    <a class="btn" href="#">
-                        <button value="59.60" id="btn-1"><i class="fa fa-usd fa-lg" aria-hidden="true">59.60</i></button>
-                    </a>
-                </div>
+                <a class="btn" href="#">
+                    <button value="59.60" id="btn-1"><i class="fa fa-usd fa-lg" aria-hidden="true">59.60</i></button>
+                </a>
             </div>
         </div>
         <!-- End Card 1 -->
@@ -58,7 +65,10 @@
         <!-- Card 2 -->
         <div class="card" id="coin2">
             <div class="card-header">
-                <h5>American Eagle 2017<br />United States 1 oz Gold Proof Coin</h5>
+                <h5>
+                    <span class="coin-name">American Eagle 2017</span><br/>
+                    <span class="coin-description">United States 1 oz Gold Proof Coin</span>
+                </h5>
             </div>
 
             <div class="card-grid">
@@ -71,11 +81,9 @@
             </div>
 
             <div class="card-footer">
-                <div>
-                    <a class="btn" href="#">
-                        <button value="1560.00" id="btn-2"><i class="fa fa-usd fa-lg" aria-hidden="true">1,560.00</i></button>
-                    </a>
-                </div>
+                <a class="btn" href="#">
+                    <button value="1560.00" id="btn-2"><i class="fa fa-usd fa-lg" aria-hidden="true">1,560.00</i></button>
+                </a>
             </div>
             <!--<div class="card-footer">-->
                 <!--<div>-->
@@ -90,7 +98,10 @@
         <!-- Card 3 -->
         <div class="card" id="coin3">
             <div class="card-header">
-                <h5>Maple Leaves 2017<br />Canada 5 oz. Pure Gold Coin</h5>
+                <h5>
+                    <span class="coin-name">Maple Leaves 2017</span><br/>
+                    <span class="coin-description">Canada 5 oz. Pure Gold Coin</span>
+                </h5>
             </div>
 
             <div class="card-grid">
@@ -103,11 +114,9 @@
             </div>
 
             <div class="card-footer">
-                <div>
-                    <a class="btn" href="#">
-                        <button value="12999.00" id="btn-3"><i class="fa fa-usd fa-lg" aria-hidden="true">12,999.00</i></button>
-                    </a>
-                </div>
+                <a class="btn" href="#">
+                    <button value="12999.00" id="btn-3"><i class="fa fa-usd fa-lg" aria-hidden="true">12,999.00</i></button>
+                </a>
             </div>
         </div>
         <!-- End Card 3 -->
@@ -115,7 +124,10 @@
         <!-- Card 4 -->
         <div class="card" id="coin4">
             <div class="card-header">
-                <h5>Rock Rabbit 2015<br />Canada 0.5 g Pure Gold Coin</h5>
+                <h5>
+                    <span class="coin-name">Rock Rabbit 2015</span><br/>
+                    <span class="coin-description">Canada 0.5 g Pure Gold Coin</span>
+                </h5>
             </div>
 
             <div class="card-grid">
@@ -128,20 +140,22 @@
             </div>
 
             <div class="card-footer">
-                <div>
-                    <a class="btn" href="#">
-                        <button value="79.95" id="btn-4"><i class="fa fa-usd fa-lg" aria-hidden="true">79.95</i></button>
-                    </a>
-                </div>
+                <a class="btn" href="#">
+                    <button value="79.95" id="btn-4"><i class="fa fa-usd fa-lg" aria-hidden="true">79.95</i></button>
+                </a>
             </div>
         </div>
         <!-- End Card 4 -->
     </div>
+
     <div>
         <!-- Card 5 -->
         <div class="card" id="coin5">
             <div class="card-header">
-                <h5>Ancient Towns of Russia - Olonets 2017<br />Russia Copper-nickel center in Brass ring Coin</h5>
+                <h5>
+                    <span class="coin-name">Ancient Towns of Russia - Olonets 2017</span><br/>
+                    <span class="coin-description">Russia Copper-nickel center in Brass ring Coin</span>
+                </h5>
             </div>
 
             <div class="card-grid">
@@ -154,11 +168,9 @@
             </div>
 
             <div class="card-footer">
-                <div>
-                    <a class="btn" href="#">
-                        <button value="1.00" id="btn-5"><i class="fa fa-usd fa-lg" aria-hidden="true">1.00</i></button>
-                    </a>
-                </div>
+                <a class="btn" href="#">
+                    <button value="1.00" id="btn-5"><i class="fa fa-usd fa-lg" aria-hidden="true">1.00</i></button>
+                </a>
             </div>
         </div>
         <!-- End Card 5 -->
@@ -166,7 +178,10 @@
         <!-- Card 6 -->
         <div class="card" id="coin6">
             <div class="card-header">
-                <h5>Kangaroo Series - Seasons Change 2017<br />Australia 1 oz Silver Proof Coin</h5>
+                <h5>
+                    <span class="coin-name">Kangaroo Series - Seasons Change 2017</span><br/>
+                    <span class="coin-description">Australia 1 oz Silver Proof Coin</span>
+                </h5>
             </div>
 
             <div class="card-grid">
@@ -179,11 +194,9 @@
             </div>
 
             <div class="card-footer">
-                <div>
-                    <a class="btn" href="#">
-                        <button value="59.60" id="btn-6"><i class="fa fa-usd fa-lg" aria-hidden="true">100.00</i></button>
-                    </a>
-                </div>
+                <a class="btn" href="#">
+                    <button value="59.60" id="btn-6"><i class="fa fa-usd fa-lg" aria-hidden="true">100.00</i></button>
+                </a>
             </div>
         </div>
         <!-- End Card 6 -->
@@ -191,7 +204,10 @@
         <!-- Card 7 -->
         <div class="card" id="coin7">
             <div class="card-header">
-                <h5>Centenary of the Trans-Australian Railway 2017<br />Australia 0.4 oz Silver Proof Coin</h5>
+                <h5>
+                    <span class="coin-name">Centenary of the Trans-Australian Railway 2017</span><br/>
+                    <span class="coin-description">Australia 0.4 oz Silver Proof Coin</span>
+                </h5>
             </div>
 
             <div class="card-grid">
@@ -204,11 +220,9 @@
             </div>
 
             <div class="card-footer">
-                <div>
-                    <a class="btn" href="#">
-                        <button value="1560.00" id="btn-7"><i class="fa fa-usd fa-lg" aria-hidden="true">1,560.00</i></button>
-                    </a>
-                </div>
+                <a class="btn" href="#">
+                    <button value="1560.00" id="btn-7"><i class="fa fa-usd fa-lg" aria-hidden="true">1,560.00</i></button>
+                </a>
             </div>
         </div>
         <!-- End Card 7 -->
@@ -216,7 +230,10 @@
         <!-- Card 8 -->
         <div class="card" id="coin8">
             <div class="card-header">
-                <h5>French Excellence Van Cleef & Arpels 2016<br />France 5 oz Gold Proof Coin</h5>
+                <h5>
+                    <span class="coin-name">French Excellence Van Cleef & Arpels 2016</span><br/>
+                    <span class="coin-description">France 5 oz Gold Proof Coin</span>
+                </h5>
             </div>
 
             <div class="card-grid">
@@ -229,17 +246,21 @@
             </div>
 
             <div class="card-footer">
-                <div>
-                    <a class="btn" href="#">
-                        <button value="12528.00" id="btn-8"><i class="fa fa-usd fa-lg" aria-hidden="true">12,528.00</i></button>
-                    </a>
-                </div>
+                <a class="btn" href="#">
+                    <button value="12528.00" id="btn-8"><i class="fa fa-usd fa-lg" aria-hidden="true">12,528.00</i></button>
+                </a>
             </div>
         </div>
         <!-- End Card 8 -->
     </div>
 </div>
 <!-- End container-->
+
+
+
+
+
+
 <footer>
 
 </footer>
