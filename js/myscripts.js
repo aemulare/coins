@@ -18,7 +18,6 @@ $(document).ready(function(){
         coinPrice = this.value;
 
         btnIndex = Number(idClicked.substring(4));
-        itemQuantities[btnIndex] += 1;
         coinQuantity = itemQuantities[btnIndex];
 
 
@@ -31,17 +30,22 @@ $(document).ready(function(){
         coinDescription = $(parentCardId).find("span").eq(1).text();
         coinImg = $(parentCardId).find("img").eq(0).attr("src");
 
-        if (coinQuantity === 1) {
+
+        if (coinQuantity === 0) {
+            itemQuantities[btnIndex] += 1;
             $(".dropdown-content").append("<li><table><tr>" +
                 "<td><img class='coin' src='" + coinImg + "'></td>" +
                 "<td>" + coinName + "</td>" +
-                "<td>" + itemQuantities[btnIndex] + "x</td>" +
+                "<td id='"+btnIndex+"'>" + itemQuantities[btnIndex] + "x</td>" +
                 "<td>" + coinPrice + "</td>" +
                 "</tr></table></li>");
         }
         else {
-            $(".dropdown-content table td:nth-child(3)").text(coinQuantity + "x");
+                itemQuantities[btnIndex] += 1;
+                sel = "#" + btnIndex;
+                $(sel).text(itemQuantities[btnIndex] + "x");
         }
+
 
         // alert("You clicked button: " + idClicked + ", item price = " + coinPrice);
 
