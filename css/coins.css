@@ -189,8 +189,8 @@ nav a {
 
 
 img {
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 200px;
     padding: 0;
     margin: 0 0 5px 0;
 }
@@ -304,13 +304,8 @@ button:active {
 }
 
 
-/*.item-price, .item-quantity {*/
-    /*width: 80px;*/
-    /*margin: 0 0 0 20px;*/
-    /*text-align: right;*/
-/*}*/
 
-
+/* item in a cart */
 .dropdown-content table {
     border-collapse: collapse;
     vertical-align: middle;
@@ -323,7 +318,7 @@ td .coin {
     float: left;
 }
 
-
+/* coin name */
 .dropdown-content table td:nth-child(2) {
     text-align: left;
     vertical-align: middle;
@@ -331,6 +326,7 @@ td .coin {
 }
 
 
+/* coin quantity */
 .dropdown-content table td:nth-child(3) {
     text-align: right;
     vertical-align: middle;
@@ -338,6 +334,7 @@ td .coin {
 }
 
 
+/* coin price */
 .dropdown-content table td:nth-child(4) {
     text-align: right;
     vertical-align: middle;
@@ -345,9 +342,10 @@ td .coin {
     padding-right: 10px;
 }
 
-/*.dropdown-content td.item-price {*/
-    /*text-align: right;*/
-/*}*/
+
+
+
+
 
 
 
