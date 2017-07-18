@@ -25,12 +25,12 @@ $(document).ready(function(){
         coinImg = $(parentCardId).find("img").eq(0).attr("src");
 
 
-        $(".dropdown-content").append("<li class='clearfix'>" +
-            "<img src='" + coinImg + "'/>" +
-            "<span class='item-name'>"+ coinName + "</span>" +
-            "<span class='item-quantity'>1x&nbsp;</span>" +
-            "<span class='item-price'>" + coinPrice + "</span>" +
-        "</li>");
+        $(".dropdown-content").append("<li><table><tr>" +
+            "<td><img class='coin' src='" + coinImg + "'></td>" +
+            "<td>"+coinName+"</td>" +
+            "<td>1x</td>" +
+            "<td>"+coinPrice+"</td>" +
+        "</tr></table></li>");
 
         // alert("You clicked button: " + idClicked + ", item price = " + coinPrice);
 
