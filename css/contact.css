@@ -10,7 +10,7 @@ form input, label {
     height: auto;
     alignment: center;
     margin: 20px auto;
-    padding: 50px 200px;
+    padding: 50px 100px;
 }
 
 
@@ -18,14 +18,14 @@ form {
     text-align: left;
     /*border: 1px solid red;*/
     font-family: Damascus, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #7b0c00;
 }
 
 
 input[type=text], select, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 6px;
