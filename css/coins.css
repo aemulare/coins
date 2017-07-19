@@ -14,7 +14,8 @@ body, html {
 
 
 .bg {
-    height: 150%;
+    height: 120%;
+    padding: 5%;
     background: url("../img/coins-wallpaper.jpg") no-repeat center center fixed;
     background-position: center;
     background-size: cover;
@@ -96,9 +97,9 @@ nav a {
 .container {
     position: absolute;
     left: 0; right: 0; top: 25%;
-    height: 120%;
+    height: auto;
     background-color: rgba(255, 249, 241, 0.74);
-    padding: 20px;
+    padding: 2%;
     z-index: 0;
 }
 
