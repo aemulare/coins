@@ -1,0 +1,55 @@
+form input, label {
+    display: block;
+    align-items: center;
+}
+
+
+.form-container {
+    background-color: white;
+    width: 70%;
+    height: auto;
+    alignment: center;
+    margin: 20px auto;
+    padding: 50px 200px;
+}
+
+
+form {
+    text-align: left;
+    /*border: 1px solid red;*/
+    font-family: Damascus, sans-serif;
+    font-size: 14px;
+    color: #7b0c00;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+select {
+    width: 30%;
+}
+
+
+input[type=submit] {
+    background-color: #ffd08a;
+    color: #7b0c00;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #f4b75c;
+}
