@@ -46,7 +46,6 @@ header {
 }
 
 
-
 footer {
     color: #7b0c00;
     font-family: Damascus, sans-serif;
@@ -91,7 +90,6 @@ nav a {
     display: inline-block;
     vertical-align: middle;
     width: auto;
-    /*border: 1px solid black;*/
 }
 
 
@@ -99,9 +97,8 @@ nav a {
     position: absolute;
     left: 0; right: 0; top: 25%;
     height: auto;
-    /*border: 2px solid red;*/
     background-color: rgba(255, 249, 241, 0.74);
-    padding: 10px;
+    padding: 20px;
     z-index: 0;
 }
 
@@ -117,12 +114,13 @@ nav a {
     color: #7b0c00;
 }
 
+
 .card-header {
     /*display: block;*/
     background-color: white;
     padding: 0;
     margin: 0 0 5px 0;
-    font-family: Helvetica, sans-serif;
+    font-family: Damascus, sans-serif;
     font-size: 0.8em;
     font-weight: normal;
     /*color: black;*/
@@ -132,7 +130,6 @@ nav a {
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
 }
-
 
 
 .card-container {
@@ -190,10 +187,11 @@ nav a {
 
 img {
     width: auto;
-    height: 200px;
+    height: 150px;
     padding: 0;
     margin: 0 0 5px 0;
 }
+
 
 .card-footer span {
     margin: 0 30px;
@@ -208,6 +206,7 @@ img {
 #total {
     font-weight: bolder;
 }
+
 
 button {
     width: 200px;
@@ -228,6 +227,7 @@ button {
 
 }
 
+
 button:active {
     box-shadow: 0 3px 0 #7b0c00;
     top: 3px;
@@ -239,11 +239,13 @@ button:active {
     cursor: pointer;
 }
 
+
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -256,6 +258,7 @@ button:active {
     z-index: 1;
 }
 
+
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
@@ -264,8 +267,10 @@ button:active {
     display: block;
 }
 
+
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content table:hover { background-color: #f1f1f1 }
+
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -286,7 +291,6 @@ button:active {
 }
 
 
-
 .dropdown-content {
     list-style: none;
     margin: 0;
@@ -295,8 +299,8 @@ button:active {
 
 .dropdown-content li {
     font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: normal;
     vertical-align: middle;
     width: 500px;
     white-space: nowrap;
@@ -309,7 +313,8 @@ button:active {
 .dropdown-content table {
     border-collapse: collapse;
     vertical-align: middle;
-    width: auto;
+    table-layout: fixed;
+    width: 500px;
     padding: 0;
 }
 
@@ -318,11 +323,22 @@ td .coin {
     float: left;
 }
 
+
+/* coin image */
+.dropdown-content table td:nth-child(1) {
+    vertical-align: middle;
+    width: 70px;
+}
+
+
+
+
 /* coin name */
 .dropdown-content table td:nth-child(2) {
     text-align: left;
     vertical-align: middle;
-    width: 300px;
+    width: 250px;
+    word-break: break-all;
 }
 
 
@@ -341,12 +357,3 @@ td .coin {
     width: 100px;
     padding-right: 10px;
 }
-
-
-
-
-
-
-
-
-

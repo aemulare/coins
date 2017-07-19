@@ -37,7 +37,7 @@ $(document).ready(function(){
                 "<td><img class='coin' src='" + coinImg + "'></td>" +
                 "<td>" + coinName + "</td>" +
                 "<td id='"+btnIndex+"'>" + itemQuantities[btnIndex] + "x</td>" +
-                "<td>" + coinPrice + "</td>" +
+                "<td>$" + numberWithCommas(coinPrice) + "</td>" +
                 "</tr></table></li>");
         }
         else {
