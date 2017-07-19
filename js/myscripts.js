@@ -52,6 +52,8 @@ $(document).ready(function(){
         theTotal = Number(theTotal) + Number($(this).val());
         $("#total").text(numberWithCommas(theTotal.toFixed(2)));
 
+        var msg = "1 item has been added to your cart:\n\t" + coinName + "\n\t" + coinDescription + "\n\t$" + numberWithCommas(coinPrice);
+        alert(msg);
         e.preventDefault();
 
     }); // end click function
