@@ -11,7 +11,7 @@ $(document).ready(function(){
     var theTotal = 0;
     var coinQuantity = 0;
     var idClicked, currentPrice, parentCard, coinName, parentCardId, btnIndex;
-    var itemQuantities = new Array(10).fill(0);
+    var itemQuantities = new Array(1000).fill(0);
 
     $("button").click(function(e){
         idClicked = this.id;

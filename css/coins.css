@@ -14,7 +14,7 @@ body, html {
 
 
 .bg {
-    height: 100%;
+    height: 150%;
     background: url("../img/coins-wallpaper.jpg") no-repeat center center fixed;
     background-position: center;
     background-size: cover;
@@ -96,7 +96,7 @@ nav a {
 .container {
     position: absolute;
     left: 0; right: 0; top: 25%;
-    height: auto;
+    height: 120%;
     background-color: rgba(255, 249, 241, 0.74);
     padding: 20px;
     z-index: 0;
@@ -259,6 +259,9 @@ button:active {
     min-width: 300px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+    overflow-y: scroll;
+    list-style: none;
+    margin: 0;
 }
 
 
@@ -287,16 +290,9 @@ button:active {
 
 
 .dropdown-content img {
-    width: 60px;
+    width: 50px;
     height: auto;
     vertical-align: middle;
-    margin-right: 15px;
-}
-
-
-.dropdown-content {
-    list-style: none;
-    margin: 0;
 }
 
 
@@ -305,9 +301,9 @@ button:active {
     font-size: 12px;
     font-weight: normal;
     vertical-align: middle;
-    width: 500px;
+    width: 100%;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: auto;
 }
 
 
@@ -317,7 +313,7 @@ button:active {
     border-collapse: collapse;
     vertical-align: middle;
     table-layout: fixed;
-    width: 500px;
+    width: 550px;
     padding: 0;
 }
 
@@ -334,14 +330,14 @@ td .coin {
 }
 
 
-
-
 /* coin name */
 .dropdown-content table td:nth-child(2) {
     text-align: left;
     vertical-align: middle;
     width: 250px;
-    word-break: break-all;
+    text-wrap: normal;
+    word-wrap: break-word;
+    padding: 0 5px;
 }
 
 
@@ -349,7 +345,9 @@ td .coin {
 .dropdown-content table td:nth-child(3) {
     text-align: right;
     vertical-align: middle;
-    width: 50px;
+    width: 60px;
+    padding-left: 10px;
+    font-weight: bold;
 }
 
 
@@ -357,6 +355,6 @@ td .coin {
 .dropdown-content table td:nth-child(4) {
     text-align: right;
     vertical-align: middle;
-    width: 100px;
+    width: 80px;
     padding-right: 10px;
 }
