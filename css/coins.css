@@ -14,7 +14,7 @@ body, html {
 
 
 .bg {
-    height: 120%;
+    height: 150%;
     padding: 5%;
     background: url("../img/coins-wallpaper.jpg") no-repeat center center fixed;
     background-position: center;
@@ -53,19 +53,17 @@ footer {
     font-size: 0.5em;
     text-align: center;
     background-color: white;
-    /*border-top: 3px solid #ffd08a;*/
-    /*border-bottom: 3px solid #ffd08a;*/
+    border-top: 3px solid #ffd08a;
+    border-bottom: 3px solid #ffd08a;
     position: relative;
     padding: 0.5% 0 0.5% 0;
 }
 
 
 .footer {
-    /*position: absolute;*/
-    /*left: 0; right: 0; top: 101%;*/
+    position: absolute;
+    left: 0; right: 0; top: 160%;
     margin: 0;
-    padding-bottom: 2%;
-    padding-top: 1%;
 }
 
 
@@ -248,6 +246,8 @@ button:active {
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 40%;
+    text-align: right;
 }
 
 
@@ -269,7 +269,7 @@ button:active {
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    /*padding: 12px 16px;*/
     text-decoration: none;
     display: block;
 }
@@ -304,7 +304,7 @@ button:active {
     vertical-align: middle;
     width: 100%;
     white-space: nowrap;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 
@@ -314,7 +314,7 @@ button:active {
     border-collapse: collapse;
     vertical-align: middle;
     table-layout: fixed;
-    width: 550px;
+    width: 500px;
     padding: 0;
 }
 

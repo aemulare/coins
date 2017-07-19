@@ -52,6 +52,8 @@ $(document).ready(function(){
         theTotal = Number(theTotal) + Number($(this).val());
         $("#total").text(numberWithCommas(theTotal.toFixed(2)));
 
+        e.preventDefault();
+
     }); // end click function
 
 
