@@ -9,12 +9,16 @@
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="js/myscripts.js"></script>
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
+    <script>
+
+    </script>
 </head>
 <body>
 
 <div class="bg"></div>
+
 <div class="header">
     <header>
         Collectible World Coins
@@ -61,7 +65,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="59.60" id="btn-1"><i class="fa fa-usd fa-lg" aria-hidden="true">59.60</i></button>
                 </a>
             </div>
@@ -87,17 +91,10 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="1560.00" id="btn-2"><i class="fa fa-usd fa-lg" aria-hidden="true">1,560.00</i></button>
                 </a>
             </div>
-            <!--<div class="card-footer">-->
-                <!--<div>-->
-                    <!--<i class="fa fa-minus fa-lg" aria-hidden="true"></i>-->
-                    <!--<span class="price"><i class="fa fa-usd" aria-hidden="true"></i>&nbsp;1,560.00</span>-->
-                    <!--<i class="fa fa-plus fa-lg" aria-hidden="true"></i>-->
-                <!--</div>-->
-            <!--</div>-->
         </div>
         <!-- End Card 2 -->
 
@@ -120,7 +117,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="12999.00" id="btn-3"><i class="fa fa-usd fa-lg" aria-hidden="true">12,999.00</i></button>
                 </a>
             </div>
@@ -146,7 +143,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="79.95" id="btn-4"><i class="fa fa-usd fa-lg" aria-hidden="true">79.95</i></button>
                 </a>
             </div>
@@ -174,7 +171,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="1.00" id="btn-5"><i class="fa fa-usd fa-lg" aria-hidden="true">1.00</i></button>
                 </a>
             </div>
@@ -200,7 +197,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="59.60" id="btn-6"><i class="fa fa-usd fa-lg" aria-hidden="true">100.00</i></button>
                 </a>
             </div>
@@ -226,7 +223,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="1560.00" id="btn-7"><i class="fa fa-usd fa-lg" aria-hidden="true">1,560.00</i></button>
                 </a>
             </div>
@@ -252,7 +249,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="12528.00" id="btn-8"><i class="fa fa-usd fa-lg" aria-hidden="true">12,528.00</i></button>
                 </a>
             </div>
@@ -279,7 +276,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="2454.85" id="btn-9"><i class="fa fa-usd fa-lg" aria-hidden="true">2,454.85</i></button>
                 </a>
             </div>
@@ -305,7 +302,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="1510.00" id="btn-10"><i class="fa fa-usd fa-lg" aria-hidden="true">1,510.00</i></button>
                 </a>
             </div>
@@ -331,7 +328,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="1729.94" id="btn-11"><i class="fa fa-usd fa-lg" aria-hidden="true">1,729.94</i></button>
                 </a>
             </div>
@@ -357,7 +354,7 @@
             </div>
 
             <div class="card-footer">
-                <a class="btn" href="#">
+                <a class="btn" href="#modal" rel="modal:open">
                     <button value="66.00" id="btn-12"><i class="fa fa-usd fa-lg" aria-hidden="true">66.00</i></button>
                 </a>
             </div>
@@ -367,12 +364,30 @@
 </div>
 <!-- End container-->
 
+<!-- Modal HTML embedded directly into document -->
+<div id="modal" style="display:none;">
+    <div class="modal-header">
+
+    </div>
+    <div class="modal-body">
+
+    </div>
+    <div class="modal-footer">
+        <h3>has been added to your cart!</h3>
+    </div>
+    <!--<p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>-->
+</div>
+
+<!--&lt;!&ndash; Link to open the modal &ndash;&gt;-->
+<!--<p><a href="#ex1" rel="modal:open">Open Modal</a></p>-->
+
 
 <div class="footer">
     <footer>
         Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017 Maria Romanova
     </footer>
 </div>
+
 
 </body>
 </html>
