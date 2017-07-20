@@ -1,3 +1,14 @@
+.bg {
+    height: 100%;
+}
+
+
+.footer {
+    position: absolute;
+    left: 0; right: 0; top: 105%;
+    margin: 0;
+}
+
 
 table, td {
     border-collapse: collapse;
@@ -7,7 +18,7 @@ table, td {
 
 table {
     alignment: center;
-    width: 70%;
+    width: 80%;
     margin: 20px auto;
 }
 
