@@ -371,3 +371,8 @@ td .coin {
 .modal-header {
     color: #7b0c00;
 }
+
+
+.modal-header h4 {
+    font-size: 14px;
+}

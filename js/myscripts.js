@@ -61,11 +61,11 @@ $(document).ready(function(){
 
         // pop-up confirmation message update
         $(".modal-header").html(
-        '<h3>' +
+        '<h4>' +
             '<span class="coin-name">'+ coinName +'</span><br/>' +
             '<span class="coin-description">'+ coinDescription +'</span>' +
-        '</h3>' +
-        '<h2>$<span id="price">'+ numberWithCommas(coinPrice) +'</span></h2>');
+        '</h4>' +
+        '<h3>$<span id="price">'+ numberWithCommas(coinPrice) +'</span></h3>');
 
         $(".modal-body").html('<img class="coin" src="'+ coinImg +'">');
 
